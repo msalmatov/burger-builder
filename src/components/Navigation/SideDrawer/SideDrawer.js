@@ -14,7 +14,7 @@ const SideDrawer = (props) => {
     return (
         <Aux>
             <Backdrop show={props.open} clicked={props.closed} />
-            <div className={attachedClasses.join(' ')}>
+            <div className={attachedClasses.join(' ')} onClick={props.clicked}>
                 <div className={styles.Logo}>
                     <Logo />
                 </div>

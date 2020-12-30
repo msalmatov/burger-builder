@@ -29,7 +29,6 @@ export const initIngredients = () => {
             dispatch(setIngredients(response.data));
         })
         .catch(error => {
-            console.log(error);
             dispatch(fetchIngredientsFailed());
         });
     };
